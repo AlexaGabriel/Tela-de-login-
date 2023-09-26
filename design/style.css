@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: url(pexels-oliver-sjöström-1078981.jpg);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+article {
+  box-shadow: inset 10px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(10deg, #038C7F 6.72%, #025159 97.44%);
+  width: 50%;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+  margin-bottom: 10%;
+}
+
+.texto1, .texto2 {
+  outline: none;
+  color: #FFF;
+  width: 90%;
+  font-size: 30px;
+  background-color: transparent;
+  border-bottom: 2px white solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.texto1::placeholder, .texto2::placeholder {
+  color: #FFF;
+}
+
+.texto1 {
+  margin-bottom: 150px;
+}/*# sourceMappingURL=style.css.map */
