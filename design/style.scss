@@ -1,35 +1,34 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "mobile.scss";
 * {
   padding: 0;
   margin: 0;
+  overflow: hidden;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
-body {
-  background-image: url(pexels-oliver-sjöström-1078981.jpg);
-  background-size: 50% 100%;
-  background-repeat: no-repeat;
+main {
+   display: flex;
+}
+.fundo{
+  width: 50vw;
+  height: 100vh;
+  
 }
 
-.conteudo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-article {
+.form {
   box-shadow: inset 10px 0px 20px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(10deg, #038C7F 6.72%, #025159 97.44%);
-  width: 50%;
-  height: 100vh;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-image: linear-gradient(10deg, #038C7F 6.72%, #025159 97.44%);
+  width: 50vw;
+  height: 100vh;
+  
 }
 
 h1 {
@@ -117,35 +116,3 @@ h1 {
   }
 }/*# sourceMappingURL=style.css.map */
 
-/* versão mobile */
-@media screen and (min-width: 300px) and (max-width: 750px) {
-    body{
-        background-size: 100% 100%;
-        
-    }
-    .conteudo{
-        
-    }
-    article{
-        margin-top: 35%;
-        width: 100%;
-        height: 72.7vh;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
-    h1{
-        margin-bottom: 730px;
-        
-        margin-left: 30%;
-    }
-    .botao{
-        width: 50%;
-    }
-    .texto1, .texto2{
-        width: 30%;
-    }
-    .criar{
-        font-size: 10px;
-    }
-}
